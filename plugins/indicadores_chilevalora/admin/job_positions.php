@@ -99,19 +99,12 @@
 
                     <a href="#" class="job-position-link"> <?php echo $position->name_job_position; ?> </a>
 
-                    	<form class="job-position-content hidden" action="<?php echo get_site_url().'/ocupacion-detalle/puesto-de-trabajo'?>" method="post" target="_blank">       
+                    	<form class="job-position-content hidden">
 
                         <input type="hidden" class="id_job_position" name="id_job_position" value="<?php echo $position->id_job_position; ?>">
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
-                          
-                              
-                                <button type="submit"   class="btn btn-primary">  Ir a la pagina</button>
-                                
-
-                                 <!-- <a  href="<?php echo get_site_url().'/ocupacion-detalle/puesto-de-trabajo/?code_job_position='.$position->id_job_position.'&id_occupation='.$position->id_occupation; ?>" target="_blank" > Ir a la pagina </a> -->
-                              
-
+                            <a  href="<?php echo get_site_url().'/ocupacion-detalle/puesto-de-trabajo/?code_job_position='.$position->id_job_position.'&id_occupation='.$position->id_occupation; ?>" target="_blank" > Ir a la pagina </a>
                                 <div class="form-group">
 
                                     <label style="margin-top: 5px;" for="id_occupation">Ocupación padre</label>

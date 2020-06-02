@@ -277,14 +277,14 @@
 
         global  $wpdb;
 
-        $response = '%s presenta un total de %s ofertas  a nivel nacional en el último periodo.';
+        $response = '%s presenta un %s porciento a nivel nacional en el último periodo.';
 
         $array_response = array(array()); 
 
-        $results = $wpdb->get_results("SELECT jp.name_job_position, jpro.number_offer as percentage 
+        $results = $wpdb->get_results("SELECT jp.code_job_position, jp.name_job_position, round(cast(((sum(jpro.number_offer::float)*100)/(select sum(number_offer) from cl_job_positions_regions_offers))as numeric),1) as percentage 
             from cl_job_positions_regions_offers jpro, cl_job_positions jp
             where jp.code_job_position = jpro.code_job_position
-            group by jp.name_job_position, jpro.number_offer
+            group by jp.code_job_position, jp.name_job_position
             order by percentage desc");
         
         $count = 0;

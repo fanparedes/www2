@@ -9,36 +9,7 @@
             'manage_options',        
             IND_RUTA . 'admin/configuration.php',
             null,
-            plugin_dir_url(__FILE__) . 'images/uno.png',
-            20
-        );
-    }
-
-
-    add_action( 'admin_menu', 'ind_options_puestos' );
-
-    function ind_options_puestos() {
-        add_menu_page(
-            'Puestos de trabajo',
-            'Puestos de trabajo',
-            'manage_options',        
-            IND_RUTA . 'admin/job_positions.php',
-            null,
-            plugin_dir_url(__FILE__) . 'images/uno.png',
-            20
-        );
-    }
-
-    add_action( 'admin_menu', 'ind_options_carga' );
-
-    function ind_options_carga() {
-        add_menu_page(
-            'Carga masiva',
-            'Carga masiva',
-            'manage_options',        
-            IND_RUTA . 'admin/uploads.php',
-            null,
-            plugin_dir_url(__FILE__) . 'images/uno.png',
+            plugin_dir_url(__FILE__) . 'images/icon_wporg.png',
             20
         );
     }
@@ -47,9 +18,9 @@
 
     function ind_submenu_administrador(){
 
-      //  add_submenu_page(IND_RUTA . 'admin/configuration.php','Carga masiva','Carga masiva','manage_options' , IND_RUTA . 'admin/uploads.php', null, 24);
+        add_submenu_page(IND_RUTA . 'admin/configuration.php','Carga masiva','Carga masiva','manage_options' , IND_RUTA . 'admin/uploads.php', null, 24);
 
-       // add_submenu_page(IND_RUTA . 'admin/configuration.php','Puestos de trabajo','Puestos de trabajo','manage_options' , IND_RUTA . 'admin/job_positions.php', null, 23);
+        add_submenu_page(IND_RUTA . 'admin/configuration.php','Puestos de trabajo','Puestos de trabajo','manage_options' , IND_RUTA . 'admin/job_positions.php', null, 23);
 
         add_submenu_page(IND_RUTA . 'admin/configuration.php','Añadir indicador','','manage_options' , IND_RUTA . 'admin/create_ind.php', null, 25);
        
