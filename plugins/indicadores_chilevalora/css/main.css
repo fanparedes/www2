@@ -1,0 +1,78 @@
+.hidden{
+	display: none;
+}
+.indicators-table-container h1,
+.indicators-table-container h2{
+	font-weight: bold;
+	color:#304D6F;
+}
+.indicators-table-container h1{
+	font-size: 2em;
+	margin-top: 30px;
+}
+.indicators-table-container h2{
+	font-size: 1.6em;
+}
+.indicator-name{
+	font-weight: bold;
+}
+.indicator-box{
+	background-color: #f9f9f9;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	padding: 10px;
+}
+.btn-chilevalora {
+    color: #fff;
+	background-color: #304D6F;
+	border-color:#304D6F;
+}
+
+h3{
+	color: #304D6F;
+}
+/* Data tables */
+table thead{
+	background: #304D6F;
+	color: #fff;
+}
+.dataTables_length{
+	display: none;
+}
+.dataTables_filter label{
+	float: right;
+	color: #304D6F;
+	font-weight: bold;
+}
+.dataTables_filter label input{
+	margin-left: 10px;
+}
+
+
+/* UPDATE COLLAPSABLE TD - MULTI INDICATOR*/
+
+.slidetd{
+	width:100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+
+.even{
+	background: #304d6f2b !important;
+}
+
+.listind{
+	margin-top: 6px !important;
+}
+
+/* Job positions */
+..job-position-link{
+	display: block;
+}
+.job-position-content{
+	padding: 20px;
+}
+.job-position-content.hidden{
+	display: none;
+}
